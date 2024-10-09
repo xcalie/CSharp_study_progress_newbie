@@ -14,6 +14,9 @@ namespace _003_writeline
 
             Console.Write("Hello");
 
+            // 等待用户输入直到输入一个字符
+            Console.ReadKey();
+
             Console.WriteLine("Hello");
 
             // 等待用户输入，直到回车结束
