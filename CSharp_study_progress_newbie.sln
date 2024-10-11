@@ -49,19 +49,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "102_array", "102_array\102_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "103_TwoDimensional_array", "103_TwoDimensional_array\103_TwoDimensional_array.csproj", "{8FA89CE5-6DB7-4664-AEAF-5B08AA679EDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "104_Interleaved_digit", "104_Interleaved_digit\104_Interleaved_digit.csproj", "{3EAE0D47-C6E5-465B-B575-F2E073EA3EFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "104_Interleaved_digit", "104_Interleaved_digit\104_Interleaved_digit.csproj", "{3EAE0D47-C6E5-465B-B575-F2E073EA3EFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "105_Value_Reference_type", "105_Value_Reference_type\105_Value_Reference_type.csproj", "{D689412F-DBCD-46AC-9246-071548B1D452}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "105_Value_Reference_type", "105_Value_Reference_type\105_Value_Reference_type.csproj", "{D689412F-DBCD-46AC-9246-071548B1D452}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "106_Value_Reference_type_special", "106_Value_Reference_type_special\106_Value_Reference_type_special.csproj", "{A8AC3FD7-081E-4754-A4F7-25D230B87B7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "106_Value_Reference_type_special", "106_Value_Reference_type_special\106_Value_Reference_type_special.csproj", "{A8AC3FD7-081E-4754-A4F7-25D230B87B7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "107_function", "107_function\107_function.csproj", "{495984AA-7B4B-431D-A6AF-1C69C865078D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "107_function", "107_function\107_function.csproj", "{495984AA-7B4B-431D-A6AF-1C69C865078D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "108_function_ref_out", "108_function_ref_out\108_function_ref_out.csproj", "{10D95AC9-B494-4856-B265-86C9FF0FB6F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "108_function_ref_out", "108_function_ref_out\108_function_ref_out.csproj", "{10D95AC9-B494-4856-B265-86C9FF0FB6F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "109_function_Variable_length_parameter", "109_function_Variable_length_parameter\109_function_Variable_length_parameter.csproj", "{97BC4B2E-E045-4FC4-AC1A-B6C1B2EBF445}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "109_function_Variable_length_parameter", "109_function_Variable_length_parameter\109_function_Variable_length_parameter.csproj", "{97BC4B2E-E045-4FC4-AC1A-B6C1B2EBF445}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "110_function_Default_parameter_value", "110_function_Default_parameter_value\110_function_Default_parameter_value.csproj", "{14516A07-827C-41E7-B169-D969E3FF5CE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "110_function_Default_parameter_value", "110_function_Default_parameter_value\110_function_Default_parameter_value.csproj", "{14516A07-827C-41E7-B169-D969E3FF5CE7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "111_Overloaded_operator", "111_Overloaded_operator\111_Overloaded_operator.csproj", "{895C536C-9FF9-4F4B-8B88-04C4FA4C81CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "112_recursion", "112_recursion\112_recursion.csproj", "{1E30CB50-D8A5-4881-8ADC-80EFC1F9D84A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "113_struct", "113_struct\113_struct.csproj", "{B2539B13-9443-45B0-BCA1-9F2644A31624}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "114_Bubble_sort", "114_Bubble_sort\114_Bubble_sort.csproj", "{135514CE-7DCC-47DB-80D0-608CD4ACC11A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "115_Selection_sort", "115_Selection_sort\115_Selection_sort.csproj", "{319B3A87-6465-45C1-8321-44F0C6A9739E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -189,6 +199,26 @@ Global
 		{14516A07-827C-41E7-B169-D969E3FF5CE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14516A07-827C-41E7-B169-D969E3FF5CE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14516A07-827C-41E7-B169-D969E3FF5CE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{895C536C-9FF9-4F4B-8B88-04C4FA4C81CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{895C536C-9FF9-4F4B-8B88-04C4FA4C81CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{895C536C-9FF9-4F4B-8B88-04C4FA4C81CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{895C536C-9FF9-4F4B-8B88-04C4FA4C81CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E30CB50-D8A5-4881-8ADC-80EFC1F9D84A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E30CB50-D8A5-4881-8ADC-80EFC1F9D84A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E30CB50-D8A5-4881-8ADC-80EFC1F9D84A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E30CB50-D8A5-4881-8ADC-80EFC1F9D84A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2539B13-9443-45B0-BCA1-9F2644A31624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2539B13-9443-45B0-BCA1-9F2644A31624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2539B13-9443-45B0-BCA1-9F2644A31624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2539B13-9443-45B0-BCA1-9F2644A31624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{135514CE-7DCC-47DB-80D0-608CD4ACC11A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{135514CE-7DCC-47DB-80D0-608CD4ACC11A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{135514CE-7DCC-47DB-80D0-608CD4ACC11A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{135514CE-7DCC-47DB-80D0-608CD4ACC11A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{319B3A87-6465-45C1-8321-44F0C6A9739E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{319B3A87-6465-45C1-8321-44F0C6A9739E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{319B3A87-6465-45C1-8321-44F0C6A9739E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{319B3A87-6465-45C1-8321-44F0C6A9739E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
