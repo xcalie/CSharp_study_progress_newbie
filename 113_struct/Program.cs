@@ -26,7 +26,10 @@ namespace _113_struct
             Console.WriteLine("我的名字是{0}，年龄是{1}", name, age);
         }
     }
-
+    // 和类基本一致
+    // 但是部分功能仅class能够实现
+    // struct作为值类型一般用于小型数学计算
+    // class用于实现大型商业目的
     internal class Program
     {
         static void Main(string[] args)
