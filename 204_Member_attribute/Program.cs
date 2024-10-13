@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace _203_constructor
+﻿namespace _204_Member_attribute
 {
     internal class Program
     {
@@ -9,15 +7,26 @@ namespace _203_constructor
             public string name;
             public char personality;
             public int age;
-            private int id;
+            public int id;
 
+            // value为传入的值
+            public int Id
+            {
+                get
+                {
+                    return id + 1;
+                }
+                set
+                {
+                    id = value - 1;
+                }
+            }
+            /*get 和 set可以只有一个
+             * 对应只读和只写
+             * 此时可以不带修饰符
+             * 两个不能同时带上修饰符
+             */
 
-            /*
-            * 构造函数
-            * 可以手动定义在声明时输入的参数和方法
-            * Xxx Yyyy = new Xxx (... )
-            * 以此方式进行初始化
-            */
             public Person(string name, int age)
             {
                 this.name = name;
@@ -25,13 +34,13 @@ namespace _203_constructor
                 Console.WriteLine(this.age);
             }
 
-            // 重载，根据输入内容不同决定调用函数
+
             public Person(string name, char personality, int age) : this(name, age)
             {
                 this.name = name;
                 this.personality = personality;
                 this.age = age + 1;
-                this.id = Convert.ToInt32(personality) + age;
+                // this.id = Convert.ToInt32(personality) + age;
             }
 
         }
@@ -39,11 +48,8 @@ namespace _203_constructor
         static void Main(string[] args)
         {
             Person person = new Person("甲", 'e', 24);
-            Console.WriteLine(person.name);
-            Console.WriteLine(person.personality);
-            Console.WriteLine(person.age);
+            person.Id = Convert.ToInt32(person.personality) + person.age;
+            Console.WriteLine(person.Id);
         }
-            
     }
-    
 }
