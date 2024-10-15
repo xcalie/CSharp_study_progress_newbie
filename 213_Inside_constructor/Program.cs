@@ -1,4 +1,4 @@
-﻿namespace _212_Inside_substitution_principle
+﻿namespace _213_Inside_constructor
 {
     // 前面几个代码出现类中类不影响
     public partial class Person
@@ -44,6 +44,7 @@
 
 
         #region 构造函数
+
 
         public Person()
         {
@@ -167,13 +168,13 @@
 
         #region 构造函数
 
-        public Brother() : base ()
+        public Brother() : base()
         {
             // 继承后来自于父类的构造函数
             this.BF = 0;
             this.friends = new int[2][];
         }
-
+        // base 为引用父类的构造函数
         public Brother(string name, char personality, int age, int[][] friends, int BF) : base(name, personality, age, friends)
         {
             this.name = name;
@@ -183,7 +184,7 @@
             this.friends = friends;
             this.BF = BF;
         }
-
+        // this 为引用自身的构造函数
         public Brother(char personality, string name, int age, int[][] friends, int BF) : this(name, personality, age, friends, BF)
         {
             this.name = name;
@@ -235,8 +236,6 @@
         {
             Console.WriteLine("wow");
         }
-        // 当扩展方法与原类中的方法名相同时
-        // 根据重载规则，完全一样的会优先执行
     }
 
     internal class Program
