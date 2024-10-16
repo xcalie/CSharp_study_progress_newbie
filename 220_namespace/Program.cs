@@ -1,6 +1,27 @@
-﻿namespace _219_sealed_funciton
+﻿using Test;
+using System;
+using Test1;
+
+/*命名空间
+ * 可以再别的文件里引用
+ * 跨项目引用
+ * 当发生命名空间内类同名
+ * 在前部点出空间名以区别
+ */
+namespace Test
 {
-    // 前面几个代码出现类中类不影响
+    using Test_in;
+
+    namespace Test_in
+    {
+        public class Person
+        {
+
+            int id;
+        }
+
+    }
+
     public class Person
     {
         public string name;
@@ -82,7 +103,39 @@
     }
 
 
+}
 
+
+
+namespace Test2
+{
+    /*internal同public㩐保护修饰符
+     * 使得类和方法只能在该命名空间内使用
+     */
+
+    internal class Person
+    {
+
+    }
+}
+
+
+
+namespace Test1
+{
+    // 同名引出
+    public class Person : Test.Person
+    {
+        int id;
+    }
+}
+
+
+
+namespace _220_namespace
+{
+    // 前面几个代码出现类中类不影响
+   
 
     static class Tools
     {
@@ -113,24 +166,27 @@
 
         static void Main(string[] args)
         {
-            Person person;
-            person = new Person("甲", 'e', 24);
+            Test.Person person;
+            person = new Test.Person("甲", 'e', 24);
+
+            // 命名空间内部的命名空间通过连续点出引用
+            Test.Test_in.Person person1 = new Test.Test_in.Person();
 
             #region 赘余
 
             Object brother;
             brother = new Brother("甲", 'e', 24, 23);
             //brother.print(2);
-
+            
             // 里式替换原则
-            Person sister = new Brother("甲", 'e', 24, 23);
+            Test.Person sister = new Brother("甲", 'e', 24, 23);
             Object[] persons = new Object[] { person, sister };
             // object 为所有类/值的父类，可以用来装载任何子类
             for (int i = 0; i < persons.Length; i++)
             {
-                if (persons[i] is Person)
+                if (persons[i] is Test.Person)
                 {
-                    (person as Person).print1(1, 1);
+                    (person as Test.Person).print1(1, 1);
                 }
                 if (persons[i] is Brother)
                 {
