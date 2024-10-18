@@ -169,6 +169,7 @@ namespace _220_namespace
             Test.Person person;
             person = new Test.Person("甲", 'e', 24);
 
+
             // 命名空间内部的命名空间通过连续点出引用
             Test.Test_in.Person person1 = new Test.Test_in.Person();
 
