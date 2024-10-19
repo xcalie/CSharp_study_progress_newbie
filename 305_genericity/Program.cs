@@ -54,14 +54,28 @@
             }
         }
 
+        class ArrayList<T>
+        {
+            public T[] numbers;
+
+            public ArrayList()
+            {
+                numbers = new T[10];
+            }
+
+            public void Add(T number1)
+            {
+
+            }
+        }
 
         static void Main(string[] args)
         {
-            Test<int, string, float> test = new Test<int, string, float> (12 , "2134", 2.4f, 1223, 3133, 23.1);
+            Test<int, string, float> test = new Test<int, string, float> (12 , "2134", 2.4f, 1223, 3133, 23.1f);
             test.object1 = 10;
             test.object2 = "string";
             test.object3 = 2.2f;
-
+            
             
         }
     }

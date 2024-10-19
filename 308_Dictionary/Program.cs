@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
+using System.Runtime.InteropServices;
 
-namespace _304_hashtable
+namespace _308_Dictionary
 {
     internal class Program
     {
@@ -12,48 +12,47 @@ namespace _304_hashtable
 
         static void Main(string[] args)
         {
-            Hashtable ht = new Hashtable();
+            Dictionary<string, int> ht = new Dictionary<string, int>();
 
 
-            ht.Add(1, "123");
+            ht.Add("1", 1);
             ht.Add("123", 222);
-            ht.Add(true, false);
-            ht.Add(false, true);
-            ht.Add(2, 222);
+            ht.Add("true", 2);
+            ht.Add("false", 5);
+            ht.Add("2", 222);
             // 键不能相同 值可以相同
 
 
             // 通过键来移除
-            ht.Remove(1);
+            ht.Remove("2");
             // 删除不存在的键没反应
 
 
             //ht.Clear();
 
 
-            Console.WriteLine(ht[2]);
             Console.WriteLine(ht["123"]);
-            Console.WriteLine(ht[true]);
+            Console.WriteLine(ht["true"]);
 
-            // 查不到无返回值
-            Console.WriteLine(ht[4]); // null
+            //// 查不到无返回值(失效
+            //Console.WriteLine(ht["4"]); // null
 
 
-            if (ht.ContainsKey(1))
+            if (ht.ContainsKey("1"))
             {
                 Console.WriteLine("存在以1为键");
             }
-            if (ht.ContainsValue("123"))
+            if (ht.ContainsValue(2))
             {
                 Console.WriteLine("存在以\"123\"为值");
             }
 
-
+            ht.Add("2", 2);
             // 只能改键对应的内容，不能改键
-            ht[2] = 666;
-            Console.WriteLine(ht[2]);
-            ht[true] = 666;
-            Console.WriteLine(ht[true]);
+            ht["2"] = 666;
+            Console.WriteLine(ht["2"]);
+            ht["true"] = 666;
+            Console.WriteLine(ht["true"]);
 
 
 
@@ -72,7 +71,7 @@ namespace _304_hashtable
             Console.WriteLine();
 
             // 变量键值对
-            foreach (DictionaryEntry item in ht)
+            foreach (KeyValuePair<string, int> item in ht)
             {
                 Console.WriteLine("键:" + item.Key + "值:" + item.Value);
             }
