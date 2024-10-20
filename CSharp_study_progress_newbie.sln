@@ -129,13 +129,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "304_hashtable", "304_hashta
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "305_genericity", "305_genericity\305_genericity.csproj", "{945EB8CA-16E2-45BE-8BA8-22D9E4B8A277}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "306_Generic_constraint", "306_Generic_constraint\306_Generic_constraint.csproj", "{E42C6D99-1D88-4154-93FD-67B0F61DF5F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "306_Generic_constraint", "306_Generic_constraint\306_Generic_constraint.csproj", "{E42C6D99-1D88-4154-93FD-67B0F61DF5F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "307_List", "307_List\307_List.csproj", "{D0E2CAE1-35B2-4A8D-AFA4-1AD3CD7D4158}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "307_List", "307_List\307_List.csproj", "{D0E2CAE1-35B2-4A8D-AFA4-1AD3CD7D4158}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "308_Dictionary", "308_Dictionary\308_Dictionary.csproj", "{C1AFDBFC-E0BE-4D79-B6E2-D9CF5467B0E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "308_Dictionary", "308_Dictionary\308_Dictionary.csproj", "{C1AFDBFC-E0BE-4D79-B6E2-D9CF5467B0E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "309_Linear_storage", "309_Linear_storage\309_Linear_storage.csproj", "{085B8F10-8578-4FB9-BB4E-D9B363827F0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "309_Linear_storage", "309_Linear_storage\309_Linear_storage.csproj", "{085B8F10-8578-4FB9-BB4E-D9B363827F0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "310_LinkedList", "310_LinkedList\310_LinkedList.csproj", "{50370024-1D99-4714-99CB-6042D0091583}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "311_generic_stack_queue", "311_generic_stack_queue\311_generic_stack_queue.csproj", "{E3CC115D-ECF6-4115-BD00-DB28786FB6A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "312_delegate", "312_delegate\312_delegate.csproj", "{9C330AF0-F307-49EB-AEC4-13B9428CB8A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -411,6 +417,18 @@ Global
 		{085B8F10-8578-4FB9-BB4E-D9B363827F0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{085B8F10-8578-4FB9-BB4E-D9B363827F0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{085B8F10-8578-4FB9-BB4E-D9B363827F0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50370024-1D99-4714-99CB-6042D0091583}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50370024-1D99-4714-99CB-6042D0091583}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50370024-1D99-4714-99CB-6042D0091583}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50370024-1D99-4714-99CB-6042D0091583}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3CC115D-ECF6-4115-BD00-DB28786FB6A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3CC115D-ECF6-4115-BD00-DB28786FB6A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3CC115D-ECF6-4115-BD00-DB28786FB6A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3CC115D-ECF6-4115-BD00-DB28786FB6A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C330AF0-F307-49EB-AEC4-13B9428CB8A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C330AF0-F307-49EB-AEC4-13B9428CB8A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C330AF0-F307-49EB-AEC4-13B9428CB8A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C330AF0-F307-49EB-AEC4-13B9428CB8A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
