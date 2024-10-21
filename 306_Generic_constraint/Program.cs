@@ -111,7 +111,7 @@ namespace _306_Generic_constraint
             ArrayList<int> member2 = new ArrayList<int>(new int[2]);
 
             //Test3<_Test>不行
-            Test3<int> member3 = new Test3<int>(new int[2]);
+            //Test3<int> member3 = new Test3<int>(new int[2]);
 
             Test4<Test> memTest4 = new Test4<Test>(new Test[3]);
             Test4<Test_2> memTest44 = new Test4<Test_2>(new Test_2[4]);

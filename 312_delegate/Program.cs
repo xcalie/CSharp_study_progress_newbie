@@ -41,6 +41,7 @@
         static void Fun2(int a)
         {
             Console.WriteLine(a);
+            
         }
         
     }
