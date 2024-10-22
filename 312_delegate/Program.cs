@@ -1,5 +1,6 @@
 ﻿namespace _312_delegate
 {
+    // Func为有返回值 Action为无返回值
     delegate void MyAction();
     delegate int MyFunc(int a);
     delegate T MyFunc2<T>(T a);
@@ -46,6 +47,10 @@
             MyFunc2<string> myFunc2 = null;
             myFunc2 = Fun3;
             Console.WriteLine(myFunc2(str));
+            
+            
+            // 泛型确定返回值和输入值
+            Func<string, string> myFunc3 = null;
         }
          static void Fun()
         {
